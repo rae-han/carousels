@@ -1,0 +1,17 @@
+{
+  "name": "carousel-wiper",
+  "version": "1.0.0",
+  "description": "npm i next",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx next build",
+    "dev": "npx next dev -p 3000"
+  },
+  "author": "raehan",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/styled": "^11.10.5",
+    "next": "^13.0.5"
+  }
+}
