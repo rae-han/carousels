@@ -46,11 +46,11 @@ const CarouselContainer = styled.div`
           .header {
             font-size: 192px;
             font-weight: bolder;
-            color: red;
+            color: var(--color-white);
           }
           .p {
             font-size:48px;
-            color: blue;
+            color: lightgrey;
           }
           
           //animation: 1s linear 0s infinite alternate scale_up_text;
@@ -144,6 +144,8 @@ function WiperCarousel({ data }) {
     console.log(currentIndex);
   }, [currentIndex])
 
+  console.log(slides)
+
   return (
     <CarouselContainer>
       <div
@@ -174,7 +176,7 @@ function WiperCarousel({ data }) {
             <div className="item-wrap">
               <img
                 className="image"
-                src={item.ad_img}
+                src={item.image}
                 alt="carousel image"
                 draggable={false}
                 style={{
@@ -183,8 +185,8 @@ function WiperCarousel({ data }) {
                 }}
               />
               <div className="text">
-                <h1 className="header">{index}</h1>
-                <span className="p">index</span>
+                <h1 className="header">{item.title}</h1>
+                <span className="p">{item.sub}</span>
               </div>
             </div>
           </div>
