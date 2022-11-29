@@ -42,14 +42,18 @@ const CarouselContainer = styled.div`
         
         .text {
           z-index: 100;
+          padding: 20px;
           
           .header {
-            font-size: 192px;
+            //font-size: 192px;
+            font-size: 48px;
             font-weight: bolder;
             color: var(--color-white);
           }
           .p {
-            font-size:48px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bolder;
             color: lightgrey;
           }
           

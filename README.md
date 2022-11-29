@@ -1,3 +1,5 @@
+https://youtu.be/39VgRNKlexk
+
 # environment config
 npm init
 npm i next

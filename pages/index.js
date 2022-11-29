@@ -7,6 +7,7 @@ import image1 from '../public/images/1.jpeg';
 import image2 from '../public/images/2.jpeg';
 import image3 from '../public/images/3.jpeg';
 import image4 from '../public/images/4.webp';
+import TheHeader from "../components/Common/TheHeader";
 
 function Index () {
   const data = useRef([
@@ -18,7 +19,7 @@ function Index () {
 
   return (
     <div>
-      <header>header</header>
+      <TheHeader></TheHeader>
       <WiperCarousel data={data.current}></WiperCarousel>
     </div>
 
